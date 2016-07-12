@@ -238,9 +238,9 @@ textarea {
   .navbar {
     display: none; }
 
-  .btn > .caret, .hero-button > .caret,
+  .btn > .caret, .hero0-button > .caret,
   .dropup > .btn > .caret,
-  .dropup > .hero-button > .caret {
+  .dropup > .hero0-button > .caret {
     border-top-color: #000 !important; }
 
   .tag {
@@ -271,7 +271,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Roboto";
   font-size: 1rem;
   line-height: 1.5;
   color: #373a3c;
@@ -321,10 +321,10 @@ blockquote {
   margin: 0 0 1rem; }
 
 a {
-  color: #0275d8;
+  color: #6b15a1;
   text-decoration: none; }
   a:focus, a:hover {
-    color: #014c8c;
+    color: #3e0c5d;
     text-decoration: underline; }
   a:focus {
     outline: thin dotted;
@@ -434,7 +434,7 @@ output {
 h1, .sub-header h2, h2, h3, h4, h5, .small-title, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit; }
@@ -457,15 +457,15 @@ h5, .small-title, .h5 {
 h6, .h6 {
   font-size: 1rem; }
 
-.lead, .hero-text, .big-title, .big-text, h3.component-title, h4.component-title {
-  font-size: 1.15rem;
+.lead, .hero-text, .big-text, h3.component-title, h4.component-title, .hero0-text {
+  font-size: 1.25rem;
   font-weight: 300; }
 
 .display-1 {
   font-size: 6rem;
   font-weight: 300; }
 
-.display-2 {
+.display-2, .hero-title {
   font-size: 5.5rem;
   font-weight: 300; }
 
@@ -473,7 +473,7 @@ h6, .h6 {
   font-size: 4.5rem;
   font-weight: 300; }
 
-.display-4, .hero-title {
+.display-4, .hero0__title-text {
   font-size: 3.5rem;
   font-weight: 300; }
 
@@ -1872,7 +1872,7 @@ pre {
     display: block !important;
     border: 1px solid #eceeef; }
 
-.form-control, .hero-input {
+.form-control, .hero0-input {
   display: block;
   width: 100%;
   padding: 0.5rem 0.75rem;
@@ -1885,26 +1885,26 @@ pre {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
-  .form-control::-ms-expand, .hero-input::-ms-expand {
+  .form-control::-ms-expand, .hero0-input::-ms-expand {
     background-color: transparent;
     border: 0; }
-  .form-control:focus, .hero-input:focus {
+  .form-control:focus, .hero0-input:focus {
     color: #55595c;
     background-color: #fff;
     border-color: #66afe9;
     outline: none; }
-  .form-control::placeholder, .hero-input::placeholder {
+  .form-control::placeholder, .hero0-input::placeholder {
     color: #999;
     opacity: 1; }
-  .form-control:disabled, .hero-input:disabled, .form-control[readonly], [readonly].hero-input {
+  .form-control:disabled, .hero0-input:disabled, .form-control[readonly], [readonly].hero0-input {
     background-color: #eceeef;
     opacity: 1; }
-  .form-control:disabled, .hero-input:disabled {
+  .form-control:disabled, .hero0-input:disabled {
     cursor: not-allowed; }
 
-select.form-control:not([size]):not([multiple]), select.hero-input:not([size]):not([multiple]) {
+select.form-control:not([size]):not([multiple]), select.hero0-input:not([size]):not([multiple]) {
   height: 2.5rem; }
-select.form-control:focus::-ms-value, select.hero-input:focus::-ms-value {
+select.form-control:focus::-ms-value, select.hero0-input:focus::-ms-value {
   color: #55595c;
   background-color: #fff; }
 
@@ -1938,42 +1938,42 @@ select.form-control:focus::-ms-value, select.hero-input:focus::-ms-value {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 0; }
-  .form-control-static.form-control-sm, .input-group-sm > .form-control-static.form-control, .input-group-sm > .form-control-static.hero-input,
+  .form-control-static.form-control-sm, .input-group-sm > .form-control-static.form-control, .input-group-sm > .form-control-static.hero0-input,
   .input-group-sm > .form-control-static.input-group-addon,
   .input-group-sm > .input-group-btn > .form-control-static.btn,
-  .input-group-sm > .input-group-btn > .form-control-static.hero-button, .form-control-static.form-control-lg, .input-group-lg > .form-control-static.form-control, .input-group-lg > .form-control-static.hero-input,
+  .input-group-sm > .input-group-btn > .form-control-static.hero0-button, .form-control-static.form-control-lg, .input-group-lg > .form-control-static.form-control, .input-group-lg > .form-control-static.hero0-input,
   .input-group-lg > .form-control-static.input-group-addon,
   .input-group-lg > .input-group-btn > .form-control-static.btn,
-  .input-group-lg > .input-group-btn > .form-control-static.hero-button {
+  .input-group-lg > .input-group-btn > .form-control-static.hero0-button {
     padding-right: 0;
     padding-left: 0; }
 
-.form-control-sm, .input-group-sm > .form-control, .input-group-sm > .hero-input,
+.form-control-sm, .input-group-sm > .form-control, .input-group-sm > .hero0-input,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
-.input-group-sm > .input-group-btn > .hero-button {
+.input-group-sm > .input-group-btn > .hero0-button {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem; }
 
-select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]), .input-group-sm > select.hero-input:not([size]):not([multiple]),
+select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]), .input-group-sm > select.hero0-input:not([size]):not([multiple]),
 .input-group-sm > select.input-group-addon:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]),
-.input-group-sm > .input-group-btn > select.hero-button:not([size]):not([multiple]) {
+.input-group-sm > .input-group-btn > select.hero0-button:not([size]):not([multiple]) {
   height: 1.8125rem; }
 
-.form-control-lg, .input-group-lg > .form-control, .input-group-lg > .hero-input,
+.form-control-lg, .input-group-lg > .form-control, .input-group-lg > .hero0-input,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
-.input-group-lg > .input-group-btn > .hero-button {
+.input-group-lg > .input-group-btn > .hero0-button {
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
   border-radius: 0.3rem; }
 
-select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]), .input-group-lg > select.hero-input:not([size]):not([multiple]),
+select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]), .input-group-lg > select.hero0-input:not([size]):not([multiple]),
 .input-group-lg > select.input-group-addon:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]),
-.input-group-lg > .input-group-btn > select.hero-button:not([size]):not([multiple]) {
+.input-group-lg > .input-group-btn > select.hero0-button:not([size]):not([multiple]) {
   height: 3.16667rem; }
 
 .form-group {
@@ -2036,7 +2036,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label,
 .has-success .custom-control {
   color: #5cb85c; }
-.has-success .form-control, .has-success .hero-input {
+.has-success .form-control, .has-success .hero0-input {
   border-color: #5cb85c; }
 .has-success .input-group-addon {
   color: #5cb85c;
@@ -2055,7 +2055,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .has-warning .checkbox-inline, .has-warning.radio label, .has-warning.checkbox label, .has-warning.radio-inline label, .has-warning.checkbox-inline label,
 .has-warning .custom-control {
   color: #f0ad4e; }
-.has-warning .form-control, .has-warning .hero-input {
+.has-warning .form-control, .has-warning .hero0-input {
   border-color: #f0ad4e; }
 .has-warning .input-group-addon {
   color: #f0ad4e;
@@ -2074,7 +2074,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .has-danger .checkbox-inline, .has-danger.radio label, .has-danger.checkbox label, .has-danger.radio-inline label, .has-danger.checkbox-inline label,
 .has-danger .custom-control {
   color: #d9534f; }
-.has-danger .form-control, .has-danger .hero-input {
+.has-danger .form-control, .has-danger .hero0-input {
   border-color: #d9534f; }
 .has-danger .input-group-addon {
   color: #d9534f;
@@ -2090,7 +2090,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle; }
-  .form-inline .form-control, .form-inline .hero-input {
+  .form-inline .form-control, .form-inline .hero0-input {
     display: inline-block;
     width: auto;
     vertical-align: middle; }
@@ -2102,9 +2102,9 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     .form-inline .input-group .input-group-addon,
     .form-inline .input-group .input-group-btn,
     .form-inline .input-group .form-control,
-    .form-inline .input-group .hero-input {
+    .form-inline .input-group .hero0-input {
       width: auto; }
-  .form-inline .input-group > .form-control, .form-inline .input-group > .hero-input {
+  .form-inline .input-group > .form-control, .form-inline .input-group > .hero0-input {
     width: 100%; }
   .form-inline .form-control-label {
     margin-bottom: 0;
@@ -2122,7 +2122,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .form-inline .has-feedback .form-control-feedback {
     top: 0; } }
 
-.btn, .hero-button {
+.btn, .hero0-button {
   display: inline-block;
   font-weight: normal;
   line-height: 1.25;
@@ -2136,53 +2136,53 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   font-size: 1rem;
   border-radius: 0.25rem;
   transition: all 0.2s ease-in-out; }
-  .btn:focus, .hero-button:focus, .btn.focus, .focus.hero-button, .btn:active:focus, .hero-button:active:focus, .btn:active.focus, .hero-button:active.focus, .btn.active:focus, .active.hero-button:focus, .btn.active.focus, .active.focus.hero-button {
+  .btn:focus, .hero0-button:focus, .btn.focus, .focus.hero0-button, .btn:active:focus, .hero0-button:active:focus, .btn:active.focus, .hero0-button:active.focus, .btn.active:focus, .active.hero0-button:focus, .btn.active.focus, .active.focus.hero0-button {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
-  .btn:focus, .hero-button:focus, .btn:hover, .hero-button:hover {
+  .btn:focus, .hero0-button:focus, .btn:hover, .hero0-button:hover {
     text-decoration: none; }
-  .btn.focus, .focus.hero-button {
+  .btn.focus, .focus.hero0-button {
     text-decoration: none; }
-  .btn:active, .hero-button:active, .btn.active, .active.hero-button {
+  .btn:active, .hero0-button:active, .btn.active, .active.hero0-button {
     background-image: none;
     outline: 0; }
-  .btn.disabled, .disabled.hero-button, .btn:disabled, .hero-button:disabled {
+  .btn.disabled, .disabled.hero0-button, .btn:disabled, .hero0-button:disabled {
     cursor: not-allowed;
     opacity: .65; }
 
-a.btn.disabled, a.disabled.hero-button,
+a.btn.disabled, a.disabled.hero0-button,
 fieldset[disabled] a.btn,
-fieldset[disabled] a.hero-button {
+fieldset[disabled] a.hero0-button {
   pointer-events: none; }
 
-.btn-primary, .hero-button {
+.btn-primary, .hero0-button {
   color: #fff;
-  background-color: #0275d8;
-  border-color: #0275d8; }
-  .btn-primary:hover, .hero-button:hover {
+  background-color: #6b15a1;
+  border-color: #6b15a1; }
+  .btn-primary:hover, .hero0-button:hover {
     color: #fff;
-    background-color: #025aa5;
-    border-color: #01549b; }
-  .btn-primary:focus, .hero-button:focus, .btn-primary.focus, .focus.hero-button {
+    background-color: #4d0f74;
+    border-color: #470e6b; }
+  .btn-primary:focus, .hero0-button:focus, .btn-primary.focus, .focus.hero0-button {
     color: #fff;
-    background-color: #025aa5;
-    border-color: #01549b; }
-  .btn-primary:active, .hero-button:active, .btn-primary.active, .active.hero-button, .open > .btn-primary.dropdown-toggle, .open > .dropdown-toggle.hero-button {
+    background-color: #4d0f74;
+    border-color: #470e6b; }
+  .btn-primary:active, .hero0-button:active, .btn-primary.active, .active.hero0-button, .open > .btn-primary.dropdown-toggle, .open > .dropdown-toggle.hero0-button {
     color: #fff;
-    background-color: #025aa5;
-    border-color: #01549b;
+    background-color: #4d0f74;
+    border-color: #470e6b;
     background-image: none; }
-    .btn-primary:active:hover, .hero-button:active:hover, .btn-primary:active:focus, .hero-button:active:focus, .btn-primary:active.focus, .hero-button:active.focus, .btn-primary.active:hover, .active.hero-button:hover, .btn-primary.active:focus, .active.hero-button:focus, .btn-primary.active.focus, .active.focus.hero-button, .open > .btn-primary.dropdown-toggle:hover, .open > .dropdown-toggle.hero-button:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .dropdown-toggle.hero-button:focus, .open > .btn-primary.dropdown-toggle.focus, .open > .dropdown-toggle.focus.hero-button {
+    .btn-primary:active:hover, .hero0-button:active:hover, .btn-primary:active:focus, .hero0-button:active:focus, .btn-primary:active.focus, .hero0-button:active.focus, .btn-primary.active:hover, .active.hero0-button:hover, .btn-primary.active:focus, .active.hero0-button:focus, .btn-primary.active.focus, .active.focus.hero0-button, .open > .btn-primary.dropdown-toggle:hover, .open > .dropdown-toggle.hero0-button:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .dropdown-toggle.hero0-button:focus, .open > .btn-primary.dropdown-toggle.focus, .open > .dropdown-toggle.focus.hero0-button {
       color: #fff;
-      background-color: #014682;
-      border-color: #01315a; }
-  .btn-primary.disabled:focus, .disabled.hero-button:focus, .btn-primary.disabled.focus, .disabled.focus.hero-button, .btn-primary:disabled:focus, .hero-button:disabled:focus, .btn-primary:disabled.focus, .hero-button:disabled.focus {
-    background-color: #0275d8;
-    border-color: #0275d8; }
-  .btn-primary.disabled:hover, .disabled.hero-button:hover, .btn-primary:disabled:hover, .hero-button:disabled:hover {
-    background-color: #0275d8;
-    border-color: #0275d8; }
+      background-color: #380b54;
+      border-color: #200630; }
+  .btn-primary.disabled:focus, .disabled.hero0-button:focus, .btn-primary.disabled.focus, .disabled.focus.hero0-button, .btn-primary:disabled:focus, .hero0-button:disabled:focus, .btn-primary:disabled.focus, .hero0-button:disabled.focus {
+    background-color: #6b15a1;
+    border-color: #6b15a1; }
+  .btn-primary.disabled:hover, .disabled.hero0-button:hover, .btn-primary:disabled:hover, .hero0-button:disabled:hover {
+    background-color: #6b15a1;
+    border-color: #6b15a1; }
 
 .btn-secondary {
   color: #373a3c;
@@ -2325,30 +2325,30 @@ fieldset[disabled] a.hero-button {
     border-color: #d9534f; }
 
 .btn-outline-primary {
-  color: #0275d8;
+  color: #6b15a1;
   background-image: none;
   background-color: transparent;
-  border-color: #0275d8; }
+  border-color: #6b15a1; }
   .btn-outline-primary:hover {
     color: #fff;
-    background-color: #0275d8;
-    border-color: #0275d8; }
+    background-color: #6b15a1;
+    border-color: #6b15a1; }
   .btn-outline-primary:focus, .btn-outline-primary.focus {
     color: #fff;
-    background-color: #0275d8;
-    border-color: #0275d8; }
+    background-color: #6b15a1;
+    border-color: #6b15a1; }
   .btn-outline-primary:active, .btn-outline-primary.active, .open > .btn-outline-primary.dropdown-toggle {
     color: #fff;
-    background-color: #0275d8;
-    border-color: #0275d8; }
+    background-color: #6b15a1;
+    border-color: #6b15a1; }
     .btn-outline-primary:active:hover, .btn-outline-primary:active:focus, .btn-outline-primary:active.focus, .btn-outline-primary.active:hover, .btn-outline-primary.active:focus, .btn-outline-primary.active.focus, .open > .btn-outline-primary.dropdown-toggle:hover, .open > .btn-outline-primary.dropdown-toggle:focus, .open > .btn-outline-primary.dropdown-toggle.focus {
       color: #fff;
-      background-color: #014682;
-      border-color: #01315a; }
+      background-color: #380b54;
+      border-color: #200630; }
   .btn-outline-primary.disabled:focus, .btn-outline-primary.disabled.focus, .btn-outline-primary:disabled:focus, .btn-outline-primary:disabled.focus {
-    border-color: #43a7fd; }
+    border-color: #a237e5; }
   .btn-outline-primary.disabled:hover, .btn-outline-primary:disabled:hover {
-    border-color: #43a7fd; }
+    border-color: #a237e5; }
 
 .btn-outline-secondary {
   color: #ccc;
@@ -2482,7 +2482,7 @@ fieldset[disabled] a.hero-button {
 
 .btn-link {
   font-weight: normal;
-  color: #0275d8;
+  color: #6b15a1;
   border-radius: 0; }
   .btn-link, .btn-link:active, .btn-link.active, .btn-link:disabled {
     background-color: transparent; }
@@ -2491,35 +2491,35 @@ fieldset[disabled] a.hero-button {
   .btn-link:hover {
     border-color: transparent; }
   .btn-link:focus, .btn-link:hover {
-    color: #014c8c;
+    color: #3e0c5d;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link:disabled:focus, .btn-link:disabled:hover {
     color: #818a91;
     text-decoration: none; }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .hero-button {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .hero0-button {
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
   border-radius: 0.3rem; }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .hero-button {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .hero0-button {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem; }
 
-.btn-block, .hero-button {
+.btn-block, .hero0-button {
   display: block;
   width: 100%; }
 
-.btn-block + .btn-block, .hero-button + .btn-block, .btn-block + .hero-button, .hero-button + .hero-button {
+.btn-block + .btn-block, .hero0-button + .btn-block, .btn-block + .hero0-button, .hero0-button + .hero0-button {
   margin-top: 0.5rem; }
 
-input[type="submit"].btn-block, input[type="submit"].hero-button,
+input[type="submit"].btn-block, input[type="submit"].hero0-button,
 input[type="reset"].btn-block,
-input[type="reset"].hero-button,
+input[type="reset"].hero0-button,
 input[type="button"].btn-block,
-input[type="button"].hero-button {
+input[type="button"].hero0-button {
   width: 100%; }
 
 .fade {
@@ -2605,7 +2605,7 @@ input[type="button"].hero-button {
   .dropdown-item.active, .dropdown-item.active:focus, .dropdown-item.active:hover {
     color: #fff;
     text-decoration: none;
-    background-color: #0275d8;
+    background-color: #6b15a1;
     outline: 0; }
   .dropdown-item.disabled, .dropdown-item.disabled:focus, .dropdown-item.disabled:hover {
     color: #818a91; }
@@ -2660,29 +2660,29 @@ input[type="button"].hero-button {
   position: relative;
   display: inline-block;
   vertical-align: middle; }
-  .btn-group > .btn, .btn-group > .hero-button,
+  .btn-group > .btn, .btn-group > .hero0-button,
   .btn-group-vertical > .btn,
-  .btn-group-vertical > .hero-button {
+  .btn-group-vertical > .hero0-button {
     position: relative;
     float: left; }
-    .btn-group > .btn:focus, .btn-group > .hero-button:focus, .btn-group > .btn:active, .btn-group > .hero-button:active, .btn-group > .btn.active, .btn-group > .active.hero-button,
+    .btn-group > .btn:focus, .btn-group > .hero0-button:focus, .btn-group > .btn:active, .btn-group > .hero0-button:active, .btn-group > .btn.active, .btn-group > .active.hero0-button,
     .btn-group-vertical > .btn:focus,
-    .btn-group-vertical > .hero-button:focus,
+    .btn-group-vertical > .hero0-button:focus,
     .btn-group-vertical > .btn:active,
-    .btn-group-vertical > .hero-button:active,
+    .btn-group-vertical > .hero0-button:active,
     .btn-group-vertical > .btn.active,
-    .btn-group-vertical > .active.hero-button {
+    .btn-group-vertical > .active.hero0-button {
       z-index: 2; }
-    .btn-group > .btn:hover, .btn-group > .hero-button:hover,
+    .btn-group > .btn:hover, .btn-group > .hero0-button:hover,
     .btn-group-vertical > .btn:hover,
-    .btn-group-vertical > .hero-button:hover {
+    .btn-group-vertical > .hero0-button:hover {
       z-index: 2; }
 
-.btn-group .btn + .btn, .btn-group .hero-button + .btn, .btn-group .btn + .hero-button, .btn-group .hero-button + .hero-button,
+.btn-group .btn + .btn, .btn-group .hero0-button + .btn, .btn-group .btn + .hero0-button, .btn-group .hero0-button + .hero0-button,
 .btn-group .btn + .btn-group,
-.btn-group .hero-button + .btn-group,
+.btn-group .hero0-button + .btn-group,
 .btn-group .btn-group + .btn,
-.btn-group .btn-group + .hero-button,
+.btn-group .btn-group + .hero0-button,
 .btn-group .btn-group + .btn-group {
   margin-left: -1px; }
 
@@ -2695,21 +2695,21 @@ input[type="button"].hero-button {
   .btn-toolbar .btn-group,
   .btn-toolbar .input-group {
     float: left; }
-  .btn-toolbar > .btn, .btn-toolbar > .hero-button,
+  .btn-toolbar > .btn, .btn-toolbar > .hero0-button,
   .btn-toolbar > .btn-group,
   .btn-toolbar > .input-group {
     margin-left: 0.5rem; }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .hero-button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .hero0-button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0; }
 
-.btn-group > .btn:first-child, .btn-group > .hero-button:first-child {
+.btn-group > .btn:first-child, .btn-group > .hero0-button:first-child {
   margin-left: 0; }
-  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .hero-button:first-child:not(:last-child):not(.dropdown-toggle) {
+  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .hero0-button:first-child:not(:last-child):not(.dropdown-toggle) {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0; }
 
-.btn-group > .btn:last-child:not(:first-child), .btn-group > .hero-button:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), .btn-group > .hero0-button:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
@@ -2717,15 +2717,15 @@ input[type="button"].hero-button {
 .btn-group > .btn-group {
   float: left; }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group > .btn-group:not(:first-child):not(:last-child) > .hero-button {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group > .btn-group:not(:first-child):not(:last-child) > .hero0-button {
   border-radius: 0; }
 
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .hero-button:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .hero0-button:last-child,
 .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0; }
 
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group > .btn-group:last-child:not(:first-child) > .hero-button:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group > .btn-group:last-child:not(:first-child) > .hero0-button:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
 
@@ -2733,34 +2733,34 @@ input[type="button"].hero-button {
 .btn-group.open .dropdown-toggle {
   outline: 0; }
 
-.btn + .dropdown-toggle-split, .hero-button + .dropdown-toggle-split {
+.btn + .dropdown-toggle-split, .hero0-button + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
-  .btn + .dropdown-toggle-split::after, .hero-button + .dropdown-toggle-split::after {
+  .btn + .dropdown-toggle-split::after, .hero0-button + .dropdown-toggle-split::after {
     margin-left: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .hero-button + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .hero0-button + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .hero-button + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .hero0-button + .dropdown-toggle-split {
   padding-right: 1.125rem;
   padding-left: 1.125rem; }
 
-.btn .caret, .hero-button .caret {
+.btn .caret, .hero0-button .caret {
   margin-left: 0; }
 
-.btn-lg .caret, .btn-group-lg > .btn .caret, .btn-group-lg > .hero-button .caret {
+.btn-lg .caret, .btn-group-lg > .btn .caret, .btn-group-lg > .hero0-button .caret {
   border-width: 0.3em 0.3em 0;
   border-bottom-width: 0; }
 
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .btn-group-lg > .hero-button .caret {
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .btn-group-lg > .hero0-button .caret {
   border-width: 0 0.3em 0.3em; }
 
-.btn-group-vertical > .btn, .btn-group-vertical > .hero-button,
+.btn-group-vertical > .btn, .btn-group-vertical > .hero0-button,
 .btn-group-vertical > .btn-group,
 .btn-group-vertical > .btn-group > .btn,
-.btn-group-vertical > .btn-group > .hero-button {
+.btn-group-vertical > .btn-group > .hero0-button {
   display: block;
   float: none;
   width: 100%;
@@ -2769,45 +2769,45 @@ input[type="button"].hero-button {
   content: "";
   display: table;
   clear: both; }
-.btn-group-vertical > .btn-group > .btn, .btn-group-vertical > .btn-group > .hero-button {
+.btn-group-vertical > .btn-group > .btn, .btn-group-vertical > .btn-group > .hero0-button {
   float: none; }
-.btn-group-vertical > .btn + .btn, .btn-group-vertical > .hero-button + .btn, .btn-group-vertical > .btn + .hero-button, .btn-group-vertical > .hero-button + .hero-button,
+.btn-group-vertical > .btn + .btn, .btn-group-vertical > .hero0-button + .btn, .btn-group-vertical > .btn + .hero0-button, .btn-group-vertical > .hero0-button + .hero0-button,
 .btn-group-vertical > .btn + .btn-group,
-.btn-group-vertical > .hero-button + .btn-group,
+.btn-group-vertical > .hero0-button + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
-.btn-group-vertical > .btn-group + .hero-button,
+.btn-group-vertical > .btn-group + .hero0-button,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0; }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), .btn-group-vertical > .hero-button:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), .btn-group-vertical > .hero0-button:not(:first-child):not(:last-child) {
   border-radius: 0; }
-.btn-group-vertical > .btn:first-child:not(:last-child), .btn-group-vertical > .hero-button:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child), .btn-group-vertical > .hero0-button:first-child:not(:last-child) {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
-.btn-group-vertical > .btn:last-child:not(:first-child), .btn-group-vertical > .hero-button:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child), .btn-group-vertical > .hero0-button:last-child:not(:first-child) {
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .hero-button {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .hero0-button {
   border-radius: 0; }
 
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .hero-button:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .hero0-button:last-child,
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .hero-button:first-child {
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .hero0-button:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
 
-[data-toggle="buttons"] > .btn input[type="radio"], [data-toggle="buttons"] > .hero-button input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="radio"], [data-toggle="buttons"] > .hero0-button input[type="radio"],
 [data-toggle="buttons"] > .btn input[type="checkbox"],
-[data-toggle="buttons"] > .hero-button input[type="checkbox"],
+[data-toggle="buttons"] > .hero0-button input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
-[data-toggle="buttons"] > .btn-group > .hero-button input[type="radio"],
+[data-toggle="buttons"] > .btn-group > .hero0-button input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"],
-[data-toggle="buttons"] > .btn-group > .hero-button input[type="checkbox"] {
+[data-toggle="buttons"] > .btn-group > .hero0-button input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
@@ -2816,18 +2816,18 @@ input[type="button"].hero-button {
   position: relative;
   width: 100%;
   display: flex; }
-  .input-group .form-control, .input-group .hero-input {
+  .input-group .form-control, .input-group .hero0-input {
     position: relative;
     z-index: 2;
     flex: 1;
     margin-bottom: 0; }
-    .input-group .form-control:focus, .input-group .hero-input:focus, .input-group .form-control:active, .input-group .hero-input:active, .input-group .form-control:hover, .input-group .hero-input:hover {
+    .input-group .form-control:focus, .input-group .hero0-input:focus, .input-group .form-control:active, .input-group .hero0-input:active, .input-group .form-control:hover, .input-group .hero0-input:hover {
       z-index: 3; }
 
 .input-group-addon:not(:first-child):not(:last-child),
 .input-group-btn:not(:first-child):not(:last-child),
 .input-group .form-control:not(:first-child):not(:last-child),
-.input-group .hero-input:not(:first-child):not(:last-child) {
+.input-group .hero0-input:not(:first-child):not(:last-child) {
   border-radius: 0; }
 
 .input-group-addon,
@@ -2849,14 +2849,14 @@ input[type="button"].hero-button {
   .input-group-addon.form-control-sm,
   .input-group-sm > .input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.btn,
-  .input-group-sm > .input-group-btn > .input-group-addon.hero-button {
+  .input-group-sm > .input-group-btn > .input-group-addon.hero0-button {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
     border-radius: 0.2rem; }
   .input-group-addon.form-control-lg,
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn,
-  .input-group-lg > .input-group-btn > .input-group-addon.hero-button {
+  .input-group-lg > .input-group-btn > .input-group-addon.hero0-button {
     padding: 0.75rem 1.5rem;
     font-size: 1.25rem;
     border-radius: 0.3rem; }
@@ -2864,58 +2864,58 @@ input[type="button"].hero-button {
   .input-group-addon input[type="checkbox"] {
     margin-top: 0; }
 
-.input-group .form-control:not(:last-child), .input-group .hero-input:not(:last-child),
+.input-group .form-control:not(:last-child), .input-group .hero0-input:not(:last-child),
 .input-group-addon:not(:last-child),
 .input-group-btn:not(:last-child) > .btn,
-.input-group-btn:not(:last-child) > .hero-button,
+.input-group-btn:not(:last-child) > .hero0-button,
 .input-group-btn:not(:last-child) > .btn-group > .btn,
-.input-group-btn:not(:last-child) > .btn-group > .hero-button,
+.input-group-btn:not(:last-child) > .btn-group > .hero0-button,
 .input-group-btn:not(:last-child) > .dropdown-toggle,
 .input-group-btn:not(:first-child) > .btn:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:not(:first-child) > .hero-button:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:not(:first-child) > .hero0-button:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:not(:first-child) > .btn-group:not(:last-child) > .btn,
-.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > .hero-button {
+.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > .hero0-button {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0; }
 
 .input-group-addon:not(:last-child) {
   border-right: 0; }
 
-.input-group .form-control:not(:first-child), .input-group .hero-input:not(:first-child),
+.input-group .form-control:not(:first-child), .input-group .hero0-input:not(:first-child),
 .input-group-addon:not(:first-child),
 .input-group-btn:not(:first-child) > .btn,
-.input-group-btn:not(:first-child) > .hero-button,
+.input-group-btn:not(:first-child) > .hero0-button,
 .input-group-btn:not(:first-child) > .btn-group > .btn,
-.input-group-btn:not(:first-child) > .btn-group > .hero-button,
+.input-group-btn:not(:first-child) > .btn-group > .hero0-button,
 .input-group-btn:not(:first-child) > .dropdown-toggle,
 .input-group-btn:not(:last-child) > .btn:not(:first-child),
-.input-group-btn:not(:last-child) > .hero-button:not(:first-child),
+.input-group-btn:not(:last-child) > .hero0-button:not(:first-child),
 .input-group-btn:not(:last-child) > .btn-group:not(:first-child) > .btn,
-.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > .hero-button {
+.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > .hero0-button {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
 
-.form-control + .input-group-addon:not(:first-child), .hero-input + .input-group-addon:not(:first-child) {
+.form-control + .input-group-addon:not(:first-child), .hero0-input + .input-group-addon:not(:first-child) {
   border-left: 0; }
 
 .input-group-btn {
   position: relative;
   font-size: 0;
   white-space: nowrap; }
-  .input-group-btn > .btn, .input-group-btn > .hero-button {
+  .input-group-btn > .btn, .input-group-btn > .hero0-button {
     position: relative; }
-    .input-group-btn > .btn + .btn, .input-group-btn > .hero-button + .btn, .input-group-btn > .btn + .hero-button, .input-group-btn > .hero-button + .hero-button {
+    .input-group-btn > .btn + .btn, .input-group-btn > .hero0-button + .btn, .input-group-btn > .btn + .hero0-button, .input-group-btn > .hero0-button + .hero0-button {
       margin-left: -1px; }
-    .input-group-btn > .btn:focus, .input-group-btn > .hero-button:focus, .input-group-btn > .btn:active, .input-group-btn > .hero-button:active, .input-group-btn > .btn:hover, .input-group-btn > .hero-button:hover {
+    .input-group-btn > .btn:focus, .input-group-btn > .hero0-button:focus, .input-group-btn > .btn:active, .input-group-btn > .hero0-button:active, .input-group-btn > .btn:hover, .input-group-btn > .hero0-button:hover {
       z-index: 3; }
-  .input-group-btn:not(:last-child) > .btn, .input-group-btn:not(:last-child) > .hero-button,
+  .input-group-btn:not(:last-child) > .btn, .input-group-btn:not(:last-child) > .hero0-button,
   .input-group-btn:not(:last-child) > .btn-group {
     margin-right: -1px; }
-  .input-group-btn:not(:first-child) > .btn, .input-group-btn:not(:first-child) > .hero-button,
+  .input-group-btn:not(:first-child) > .btn, .input-group-btn:not(:first-child) > .hero0-button,
   .input-group-btn:not(:first-child) > .btn-group {
     z-index: 2;
     margin-left: -1px; }
-    .input-group-btn:not(:first-child) > .btn:focus, .input-group-btn:not(:first-child) > .hero-button:focus, .input-group-btn:not(:first-child) > .btn:active, .input-group-btn:not(:first-child) > .hero-button:active, .input-group-btn:not(:first-child) > .btn:hover, .input-group-btn:not(:first-child) > .hero-button:hover,
+    .input-group-btn:not(:first-child) > .btn:focus, .input-group-btn:not(:first-child) > .hero0-button:focus, .input-group-btn:not(:first-child) > .btn:active, .input-group-btn:not(:first-child) > .hero0-button:active, .input-group-btn:not(:first-child) > .btn:hover, .input-group-btn:not(:first-child) > .hero0-button:hover,
     .input-group-btn:not(:first-child) > .btn-group:focus,
     .input-group-btn:not(:first-child) > .btn-group:active,
     .input-group-btn:not(:first-child) > .btn-group:hover {
@@ -3138,7 +3138,7 @@ input[type="button"].hero-button {
 .nav-pills .nav-item.open .nav-link:hover {
   color: #fff;
   cursor: default;
-  background-color: #0275d8; }
+  background-color: #6b15a1; }
 
 .nav-stacked .nav-item {
   display: block;
@@ -3362,8 +3362,8 @@ input[type="button"].hero-button {
   margin-left: -0.625rem; }
 
 .card-primary {
-  background-color: #0275d8;
-  border-color: #0275d8; }
+  background-color: #6b15a1;
+  border-color: #6b15a1; }
   .card-primary .card-header,
   .card-primary .card-footer {
     background-color: transparent; }
@@ -3398,7 +3398,7 @@ input[type="button"].hero-button {
 
 .card-outline-primary {
   background-color: transparent;
-  border-color: #0275d8; }
+  border-color: #6b15a1; }
 
 .card-outline-secondary {
   background-color: transparent;
@@ -3553,8 +3553,8 @@ input[type="button"].hero-button {
     z-index: 2;
     color: #fff;
     cursor: default;
-    background-color: #0275d8;
-    border-color: #0275d8; }
+    background-color: #6b15a1;
+    border-color: #6b15a1; }
   .page-item.disabled .page-link, .page-item.disabled .page-link:focus, .page-item.disabled .page-link:hover {
     color: #818a91;
     pointer-events: none;
@@ -3567,12 +3567,12 @@ input[type="button"].hero-button {
   float: left;
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
-  color: #0275d8;
+  color: #6b15a1;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #ddd; }
   .page-link:focus, .page-link:hover {
-    color: #014c8c;
+    color: #3e0c5d;
     background-color: #eceeef;
     border-color: #ddd; }
 
@@ -3610,7 +3610,7 @@ input[type="button"].hero-button {
   .tag:empty {
     display: none; }
 
-.btn .tag, .hero-button .tag {
+.btn .tag, .hero0-button .tag {
   position: relative;
   top: -1px; }
 
@@ -3630,9 +3630,9 @@ a.tag:focus, a.tag:hover {
     background-color: #687077; }
 
 .tag-primary {
-  background-color: #0275d8; }
+  background-color: #6b15a1; }
   .tag-primary[href]:focus, .tag-primary[href]:hover {
-    background-color: #025aa5; }
+    background-color: #4d0f74; }
 
 .tag-success {
   background-color: #5cb85c; }
@@ -3918,8 +3918,8 @@ base::-moz-progress-bar,
     z-index: 2;
     color: #fff;
     text-decoration: none;
-    background-color: #0275d8;
-    border-color: #0275d8; }
+    background-color: #6b15a1;
+    border-color: #6b15a1; }
     .list-group-item.active .list-group-item-heading,
     .list-group-item.active .list-group-item-heading > small,
     .list-group-item.active .list-group-item-heading > .small, .list-group-item.active:focus .list-group-item-heading,
@@ -3929,7 +3929,7 @@ base::-moz-progress-bar,
     .list-group-item.active:hover .list-group-item-heading > .small {
       color: inherit; }
     .list-group-item.active .list-group-item-text, .list-group-item.active:focus .list-group-item-text, .list-group-item.active:hover .list-group-item-text {
-      color: #a8d6fe; }
+      color: #cc91f1; }
 
 .list-group-flush .list-group-item {
   border-radius: 0; }
@@ -4196,7 +4196,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -4275,7 +4275,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -4516,7 +4516,7 @@ button.close {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-  .carousel-caption .btn, .carousel-caption .hero-button {
+  .carousel-caption .btn, .carousel-caption .hero0-button {
     text-shadow: none; }
 
 @media (min-width: 544px) {
@@ -4546,10 +4546,10 @@ button.close {
 
 .bg-primary {
   color: #fff !important;
-  background-color: #0275d8 !important; }
+  background-color: #6b15a1 !important; }
 
 a.bg-primary:focus, a.bg-primary:hover {
-  background-color: #025aa5 !important; }
+  background-color: #4d0f74 !important; }
 
 .bg-success {
   color: #fff !important;
@@ -5559,10 +5559,10 @@ a.text-muted:focus, a.big-text:focus, a.small-text:focus, a.text-muted:hover, a.
   color: #687077; }
 
 .text-primary {
-  color: #0275d8 !important; }
+  color: #6b15a1 !important; }
 
 a.text-primary:focus, a.text-primary:hover {
-  color: #025aa5; }
+  color: #4d0f74; }
 
 .text-success {
   color: #5cb85c !important; }
@@ -5664,25 +5664,66 @@ a.text-danger:focus, a.text-danger:hover {
 
 .big-title {
   font-weight: bold;
-  font-size: 1.5rem; }
+  font-size: 2rem; }
 
-.hero-text {
-  font-weight: 300;
-  font-size: 1.5rem; }
+.small-title {
+  font-weight: bold; }
 
-.hero-cta {
-  max-width: 15rem; }
-  @media (max-width: 767px) {
-    .hero-cta {
-      margin-left: auto;
-      margin-right: auto; } }
+.sub-header {
+  padding-bottom: 9px;
+  margin: 10rem 0 2rem;
+  border-bottom: 1px solid #eee; }
 
-@media (min-width: 768px) {
-  .hero-button {
-    margin-left: 0.3rem; } }
-@media (max-width: 767px) {
-  .hero-button {
-    margin-top: 0.3rem; } }
+h3.component-title {
+  font-weight: bold;
+  margin: 1.5rem 0 1rem; }
+
+h4.component-title {
+  margin: 1.5rem 0 .5rem; }
+
+.u-sudoku {
+  display: flex;
+  flex-direction: column; }
+
+.u-sudoku__1 {
+  margin-bottom: auto;
+  margin-right: auto; }
+
+.u-sudoku__2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto; }
+
+.u-sudoku__3 {
+  margin-left: auto; }
+
+.u-sudoku__4 {
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.u-sudoku__5 {
+  margin: auto; }
+
+.u-sudoku__6 {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.u-sudoku__7 {
+  margin-top: auto; }
+
+.u-sudoku__8 {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto; }
+
+.u-sudoku__9 {
+  margin-top: auto;
+  margin-left: auto; }
+
+.h-100 {
+  height: 100% !important; }
 
 .separator0__line {
   height: 1px;
@@ -5760,11 +5801,8 @@ a.text-danger:focus, a.text-danger:hover {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; }
-
-.hero0 .hero-title {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem; }
+  width: 100%;
+  border-bottom: 1px solid #D6D6D8; }
 
 .hero0__cta-container {
   display: flex;
@@ -5774,12 +5812,30 @@ a.text-danger:focus, a.text-danger:hover {
     .hero0__cta-container {
       flex-direction: row; } }
 
+.hero0__title-text {
+  font-weight: bold; }
+
+.hero0-text {
+  font-weight: 300;
+  font-size: 1.25rem; }
+
+.hero0-cta {
+  max-width: 15rem;
+  font-size: 1.25rem; }
+  @media (max-width: 767px) {
+    .hero0-cta {
+      margin-left: auto;
+      margin-right: auto; } }
+
+.hero0-button {
+  font-size: 1.25rem; }
+
 .hero1 {
-  background: radial-gradient(ellipse at center top, #8fcafe, #0275d8);
+  background: radial-gradient(ellipse at center top, #c17bee, #6b15a1);
   color: #fff; }
   .hero1 .hero-cta {
     background-color: #fff;
-    color: #299bfd;
+    color: #9721e2;
     border-color: #fff; }
   .hero1 .hero-cta:hover {
     background-color: transparent;
@@ -6072,15 +6128,15 @@ a.text-danger:focus, a.text-danger:hover {
   height: 100px;
   text-align: center;
   margin: 0 25%;
-  border-bottom: 1px solid #0275d8;
+  border-bottom: 1px solid #6b15a1;
   display: block; }
 .pricingtable1 .head-title .title-page {
-  color: #0275d8;
+  color: #6b15a1;
   font-weight: 700; }
 .pricingtable1 .head-title .subtitle {
-  color: #0275d8; }
+  color: #6b15a1; }
 .pricingtable1 .head-title .subtitle a {
-  color: #0275d8;
+  color: #6b15a1;
   transition: 0.3s linear; }
 .pricingtable1 .head-title .subtitle a:hover {
   color: #F5A623;
@@ -6096,7 +6152,7 @@ a.text-danger:focus, a.text-danger:hover {
   height: 20rem;
   margin: 1% 1.5%;
   border-radius: 10px;
-  box-shadow: 0px 0px 1px #0275d8;
+  box-shadow: 0px 0px 1px #6b15a1;
   transition: 0.3s ease-in-out;
   cursor: pointer; }
   @media (max-width: 991px) {
@@ -6108,7 +6164,7 @@ a.text-danger:focus, a.text-danger:hover {
     .pricingtable1 .container__pricingtable1 .table-price {
       width: auto; } }
 .pricingtable1 .container__pricingtable1 .table-price:hover {
-  box-shadow: 0px 0px 8px #0275d8; }
+  box-shadow: 0px 0px 8px #6b15a1; }
 .pricingtable1 .container__pricingtable1 .table-price .pic-item {
   width: 100%;
   height: 60%;
@@ -6117,7 +6173,7 @@ a.text-danger:focus, a.text-danger:hover {
   width: 100%;
   height: 100%; }
 .pricingtable1 .container__pricingtable1 .table-price .pic-item svg {
-  fill: #0275d8;
+  fill: #6b15a1;
   margin-left: auto; }
 .pricingtable1 .container__pricingtable1 .table-price .best-choice {
   background: #fff;
@@ -6128,14 +6184,14 @@ a.text-danger:focus, a.text-danger:hover {
   text-align: center;
   line-height: 1.8;
   text-transform: uppercase;
-  color: #0275d8;
+  color: #6b15a1;
   margin: 0 25%;
   top: 56%;
   border-radius: 10px;
   position: absolute;
   z-index: 1; }
 .pricingtable1 .container__pricingtable1 .table-price .description {
-  background: #0275d8;
+  background: #6b15a1;
   width: 100%;
   height: 40%;
   border-bottom-left-radius: 10px;
@@ -6145,7 +6201,7 @@ a.text-danger:focus, a.text-danger:hover {
   width: 100%;
   font-weight: 300;
   text-align: center;
-  color: #daeeff;
+  color: #e1bef7;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   top: 30%;
@@ -6156,7 +6212,7 @@ a.text-danger:focus, a.text-danger:hover {
   font-size: 1.5em;
   font-weight: 300;
   text-align: center;
-  color: #5cb3fd;
+  color: #ac4ee8;
   top: 50%;
   display: block;
   position: absolute; }
@@ -6190,7 +6246,7 @@ a.text-danger:focus, a.text-danger:hover {
 
 .footer0 h3 {
   border-bottom: 1px solid #BAC1C8;
-  color: #0275d8;
+  color: #6b15a1;
   line-height: 2rem;
   padding: 1rem 0 1rem; }
 
@@ -6228,8 +6284,8 @@ a.text-danger:focus, a.text-danger:hover {
   color: #EDEFF1; }
 
 .social li:hover {
-  border: 2px solid #0275d8;
-  background: #0275d8; }
+  border: 2px solid #6b15a1;
+  background: #6b15a1; }
 
 .social li a i {
   margin: 0 0 0 5px;
@@ -6240,62 +6296,6 @@ a.text-danger:focus, a.text-danger:hover {
   color: #777;
   border-top: .05rem solid #e5e5e5; }
 
-.sub-header {
-  padding-bottom: 9px;
-  margin: 10rem 0 2rem;
-  border-bottom: 1px solid #eee; }
-
-h3.component-title {
-  font-weight: bold;
-  margin: 1.5rem 0 1rem; }
-
-h4.component-title {
-  margin: 1.5rem 0 .5rem; }
-
-.u-sudoku {
-  display: flex;
-  flex-direction: column; }
-
-.u-sudoku__1 {
-  margin-bottom: auto;
-  margin-right: auto; }
-
-.u-sudoku__2 {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto; }
-
-.u-sudoku__3 {
-  margin-left: auto; }
-
-.u-sudoku__4 {
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto; }
-
-.u-sudoku__5 {
-  margin: auto; }
-
-.u-sudoku__6 {
-  margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto; }
-
-.u-sudoku__7 {
-  margin-top: auto; }
-
-.u-sudoku__8 {
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto; }
-
-.u-sudoku__9 {
-  margin-top: auto;
-  margin-left: auto; }
-
-.h-100 {
-  height: 100% !important; }
-
 /* Override properties here
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 html {
@@ -6305,12 +6305,12 @@ html {
 @media (min-width: 544px) {
   html {
     font-size: 16px; } }
-.btn-xl, .hero-button {
+.btn-xl, .hero0-button {
   padding: 1.25rem 1.75rem;
   font-size: 1.25rem;
   border-radius: 0.3rem; }
 
-.form-control-xl, .hero-input {
+.form-control-xl, .hero0-input {
   padding: 1.25rem 1.75rem;
   font-size: 1.25rem;
   line-height: 1.33333;
