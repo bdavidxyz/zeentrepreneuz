@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+
+  {% include head.html %}
+
+  <body>
+
+    <main class="main" aria-label="Content">
+      {{ content }}
+    </main>
+
+    <!--startjs-->
+      {% include js-jquery.html %}
+      {% comment %} {% include js-holder.html %} {% endcomment %}
+      {% comment %} {% include js-tether.html %} {% endcomment %}
+      {% comment %} {% include js-bootstrap.html %} {% endcomment %}
+      {% comment %} {% include js-custom.html %} {% endcomment %}
+      {% include ownjs/own-navbar1.html %}
+    <!--endjs-->
+  </body>
+
+</html>
