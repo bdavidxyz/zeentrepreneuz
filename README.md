@@ -8,4 +8,6 @@
 
 
 
-## [View demos and full documentation &rarr;](http://bdavidxyz.github.io/zeentrepreneuz/)
+## [View home page here &rarr;](https://bdavidxyz.github.io/zeentrepreneuz/index.html)
+
+## Installation & Usage below
