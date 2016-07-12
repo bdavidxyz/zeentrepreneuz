@@ -9,8 +9,7 @@
 .hero0-title {
 }
 .hero0__title-text {
-   @extend .display-4;
-  // line-height: 4rem;
+  @extend .display-4;
   font-weight: bold;
 }
 

@@ -8,6 +8,16 @@
   }
 }
 
+.navbar1__btn {
+  @extend .btn;
+  @extend .btn-outline-primary;
+  @extend .btn-sm;
+}
+
+.has-docked-nav .navbar1__btn {
+  @extend .btn-primary;
+}
+
 .navbar1__bar {
   display: flex;
   justify-content: space-around;

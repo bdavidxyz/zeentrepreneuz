@@ -14,29 +14,36 @@ if ($('.navbar1').length !==0 ) {
   function init() {
     $window.on('scroll', onScroll);
     $window.on('resize', resize);
-    $('a[href^="#"]').on('click', smoothScroll);
+    $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top-40
+        }, 500);
+        return false;
+      }
+    }
+  });
+    // $('a[href^="#"]').on('click', smoothScroll);
   }
 
   function smoothScroll(e) {
-    e.preventDefault();
-    $(document).off("scroll");
-    var target = this.hash,
-    menu = target;
-    $target = $(target);
-    $('html, body').stop().animate({
-      'scrollTop': $target.offset().top-40
-    }, 0, 'swing', function () {
-      window.location.hash = target;
-      $(document).on("scroll", onScroll);
-    });
+    // e.preventDefault();
+    // $(document).off("scroll");
+    // var target = this.hash,
+    // $target = $(target);
+    // console.log($target.offset().top);
+    // window.location.hash = target;
+    // $('html, body').stop().animate({
+    //   'scrollTop': $target.offset().top-40
+    // }, 0, 'swing', function () {
+    //   window.location.hash = target;
+    //   $(document).on("scroll", onScroll);
+    // });
   }
 
-
-  $("#button").click(function() {
-    $('html, body').animate({
-      scrollTop: $("#elementtoScrollToID").offset().top
-    }, 2000);
-  });
 
   function resize() {
     $body.removeClass('has-docked-nav');
