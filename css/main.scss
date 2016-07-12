@@ -15,7 +15,7 @@ $enable-transitions:        true;
 
 $brand-primary:             #6b15a1;
 
-$lead-font-size:             1.15rem;
+// $lead-font-size:             1.15rem;
 
 $spacer:                     1rem;
 $spacer-x:                   $spacer;
@@ -97,7 +97,7 @@ html {
   }
 }
 
-// bigger buttons
+// // bigger buttons
 .btn-xl {
   @include button-size($btn-padding-y-xl, $btn-padding-x-xl, $font-size-lg, $btn-border-radius-lg);
 }

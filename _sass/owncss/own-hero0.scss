@@ -7,10 +7,10 @@
   } 
 }
 .hero0-title {
-  
 }
 .hero0__title-text {
-  line-height: 4rem;
+   @extend .display-4;
+  // line-height: 4rem;
   font-weight: bold;
 }
 
@@ -22,12 +22,11 @@
 
 .hero0-cta {
   max-width: 15rem;
-  @extend .lead;
   @include media-breakpoint-down(sm) {
     margin-left: auto;
     margin-right: auto;
   }
-
+  font-size: $lead-font-size;
 }
 
 .hero0-input {
@@ -36,11 +35,11 @@
 }
 
 .hero0-button {
-  font-size: $lead-font-size;
   @extend .btn;
   @extend .btn-primary;
   @extend .btn-xl;
   @extend .btn-block;
+  font-size: $lead-font-size;
   // @extend .lead; 
   // @include media-breakpoint-up(md) {
   //   margin-left: 0.3rem;
