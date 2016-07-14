@@ -3,9 +3,11 @@
 }
 
 .hero-text {
-  @extend .lead; 
+  // @extend .lead; 
   font-weight: 300;
   font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.17rem;
 }
 
 .big-title {
@@ -19,6 +21,7 @@
 
 .small-title {
   @extend h5;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 

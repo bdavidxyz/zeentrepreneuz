@@ -17,6 +17,8 @@
   @extend .lead; 
   font-weight: 300;
   font-size: $lead-font-size;
+  text-transform: uppercase;
+  letter-spacing: 0.17rem;
 }
 
 .hero0-cta {

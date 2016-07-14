@@ -1,6 +1,6 @@
-
+$navbar1-height:4rem;
 .navbar1 {
-  height: 4rem;
+  height: $navbar1-height;
   z-index: 99;
   background-color: $body-bg;
   a {
@@ -16,6 +16,10 @@
 
 .has-docked-nav .navbar1__btn {
   @extend .btn-primary;
+}
+
+body.has-docked-nav {
+  padding-top: $navbar1-height;
 }
 
 .navbar1__bar {
