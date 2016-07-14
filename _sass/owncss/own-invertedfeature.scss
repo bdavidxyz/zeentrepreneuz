@@ -1,11 +1,9 @@
 .invertedfeature {
   background: radial-gradient(ellipse at center top, lighten($brand-primary, 40%), $brand-primary);
-  color: #fff;
 
 
 .flip-container {
   perspective: 1000;
-
   border: 1px solid #ccc;
 }
 
@@ -16,7 +14,7 @@
 
 .flip-container, .front, .back {
   width: 100%;
-  height: 427px;
+  height: 23rem;
 }
 
 .flipper {
@@ -33,10 +31,13 @@
   position: absolute;
   top: 0;
   left: 0;
+  display: table;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .front {
-  background: green 0 0 no-repeat;
+  background: #fff 0 0 no-repeat;
   z-index: 2;
 }
 
@@ -47,16 +48,19 @@
 }
 
 .front .name {
-  font-size: 2em;
+  font-size: 2rem;
   display: inline-block;
-  background: rgba(33, 33, 33, 0.9);
+  background: $brand-primary;
   color: #f8f8f8;
-  font-family: Courier;
+  // font-family: Courier;
   padding: 5px 10px;
   border-radius: 5px;
   bottom: 60px;
-  left: 25%;
-  position: absolute;
+  left: 15%;
+  // position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  // width: 100%;
   text-shadow: 0.1em 0.1em 0.05em #333;
 
   transform: rotate(-20deg);
