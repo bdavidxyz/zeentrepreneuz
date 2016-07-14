@@ -48,10 +48,11 @@
 }
 
 .front .name {
-  font-size: 2rem;
+  // @extend .small-text;
+  // font-size: 2rem;
   display: inline-block;
   background: $brand-primary;
-  color: #f8f8f8;
+  color: #fff;
   // font-family: Courier;
   padding: 5px 10px;
   border-radius: 5px;
@@ -63,7 +64,7 @@
   // width: 100%;
   text-shadow: 0.1em 0.1em 0.05em #333;
 
-  transform: rotate(-20deg);
+  transform: rotate(-45deg);
 }
 
 .back-logo {
