@@ -49,7 +49,7 @@ $input-padding-y-xl:             1.25rem;
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "bootstrap";
+@import "bootstrap/bootstrap";
 
 //Import our own businness
 @import "owncss/own-common-typography";
@@ -79,6 +79,7 @@ $input-padding-y-xl:             1.25rem;
 @import "owncss/own-frustration";
 @import "owncss/own-whatitis-lightslider";
 @import "owncss/own-whatitis";
+@import "owncss/own-animate";
 
 
 
@@ -122,3 +123,4 @@ html {
     width: 80%;
   }
 }
+
