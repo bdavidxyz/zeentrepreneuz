@@ -13,7 +13,7 @@ $enable-flex:               true;
 $enable-shadows:            false;
 $enable-transitions:        true;
 
-$brand-primary:             #6b15a1;
+$brand-primary:             #03A9F4;
 
 // $lead-font-size:             1.15rem;
 
@@ -36,8 +36,8 @@ $spacers: (
   12: (x: ($spacer-x * 12), y: ($spacer-y * 12) )
   );
 
-$headings-font-family:   "Roboto", sans-serif;
-$font-family-base:       "Roboto";
+$headings-font-family:   "Lato", sans-serif;
+$font-family-base:       "Lato";
 
 $btn-padding-x-xl:               1.75rem;
 $btn-padding-y-xl:               1.25rem;
@@ -52,34 +52,19 @@ $input-padding-y-xl:             1.25rem;
 @import "bootstrap/bootstrap";
 
 //Import our own businness
-@import "owncss/own-common-typography";
 @import "owncss/own-bootstrap-full-feature";
 @import "owncss/own-utilities";
 
-
-@import "owncss/own-separator0";
-@import "owncss/own-separator1";
-@import "owncss/own-separator2";
-@import "owncss/own-navbar0";
-@import "owncss/own-navbar1";
-@import "owncss/own-hero0";
-@import "owncss/own-hero1";
-@import "owncss/own-hero2";
-@import "owncss/own-feature1";
-@import "owncss/own-feature2";
-@import "owncss/own-feature3";
-@import "owncss/own-ourteam0";
-@import "owncss/own-ourteam1";
-@import "owncss/own-pricingtable0";
-@import "owncss/own-pricingtable1";
-@import "owncss/own-footer0";
-@import "owncss/own-footer1";
-@import "owncss/own-howtouse";
-@import "owncss/own-invertedfeature";
-@import "owncss/own-frustration";
-@import "owncss/own-whatitis-lightslider";
-@import "owncss/own-whatitis";
+//External dependencies
 @import "owncss/own-animate";
+
+@import "owncss/own-hero";
+@import "owncss/own-separator";
+@import "owncss/own-navbar";
+@import "owncss/own-what";
+@import "owncss/own-howtouse";
+@import "owncss/own-demo";
+@import "owncss/own-footer";
 
 
 

@@ -1,5 +1,5 @@
 .hero-title {
-   @extend .display-2;
+   @extend .display-4;
 }
 
 .hero-text {
@@ -11,20 +11,24 @@
 }
 
 .big-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 2rem;
 }
 
 .big-text {
   @extend .lead;
+  font-size: 1.5rem;
 }
 
 .small-title {
   @extend h5;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .small-text {
   // @extend .text-muted;
+  // font-weight: bold;
+  // font-weight: 700;
+  font-size: 1.1rem;
 }

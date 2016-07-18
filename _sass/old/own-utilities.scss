@@ -1,0 +1,52 @@
+.u-sudoku {
+  display:flex;  
+  flex-direction:column; 
+}
+
+.u-sudoku__1 {
+  margin-bottom:auto;
+  margin-right: auto;
+}
+.u-sudoku__2 {
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: auto;
+}
+.u-sudoku__3 {
+ margin-left: auto;
+}
+.u-sudoku__4 {
+ margin-right: auto;
+ margin-top: auto;
+ margin-bottom: auto;
+}
+.u-sudoku__5 {
+  margin:  auto;
+}
+.u-sudoku__6 {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.u-sudoku__7 {
+  margin-top:auto;
+}
+.u-sudoku__8 {
+  margin-top:auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.u-sudoku__9 {
+  margin-top:auto;
+  margin-left: auto;
+}
+
+.h-100 { height: 100% !important; } // notice w-100 exists in bootstrap
+
+
+.u-hidden{
+     opacity:0;
+}
+.u-visible{
+     opacity:1;
+}
