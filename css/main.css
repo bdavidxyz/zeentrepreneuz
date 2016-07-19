@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* Define variable here
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Variables from template
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Import sass file here
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*!
@@ -486,7 +488,7 @@ hr {
 
 small,
 .small {
-  font-size: 80%;
+  font-size: 90%;
   font-weight: normal; }
 
 mark,
@@ -5701,44 +5703,44 @@ h3.component-title {
 h4.component-title {
   margin: 1.5rem 0 .5rem; }
 
-.u-sudoku {
+.o-sudoku {
   display: flex;
   flex-direction: column; }
 
-.u-sudoku__1 {
+.o-sudoku__1 {
   margin-bottom: auto;
   margin-right: auto; }
 
-.u-sudoku__2 {
+.o-sudoku__2 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto; }
 
-.u-sudoku__3 {
+.o-sudoku__3 {
   margin-left: auto; }
 
-.u-sudoku__4 {
+.o-sudoku__4 {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto; }
 
-.u-sudoku__5 {
+.o-sudoku__5 {
   margin: auto; }
 
-.u-sudoku__6 {
+.o-sudoku__6 {
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto; }
 
-.u-sudoku__7 {
+.o-sudoku__7 {
   margin-top: auto; }
 
-.u-sudoku__8 {
+.o-sudoku__8 {
   margin-top: auto;
   margin-left: auto;
   margin-right: auto; }
 
-.u-sudoku__9 {
+.o-sudoku__9 {
   margin-top: auto;
   margin-left: auto; }
 
@@ -5750,6 +5752,23 @@ h4.component-title {
 
 .u-visible {
   opacity: 1; }
+
+.u-svgbox {
+  display: inline-block;
+  position: relative; }
+
+.u-svgbox svg {
+  display: block; }
+
+.u-svgbox__same-size-as-svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+.btn:focus, .hero-button:focus, .navbar__btn:focus {
+  outline: 0; }
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -7664,13 +7683,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-transform: uppercase;
   letter-spacing: 0.17rem; }
 
-.hero-cta {
-  max-width: 15rem;
-  font-size: 1.4rem; }
-  @media (max-width: 767px) {
-    .hero-cta {
-      margin-left: auto;
-      margin-right: auto; } }
+@media (max-width: 767px) {
+  .hero-cta {
+    max-width: 15rem;
+    margin-left: auto;
+    margin-right: auto; } }
 
 .hero-button {
   font-size: 1.4rem; }
@@ -7752,7 +7769,7 @@ body.has-docked-nav {
   display: block; }
 
 .footer {
-  background: #EDEFF1;
+  background: #f7f7f9;
   height: auto;
   padding-bottom: 30px;
   position: relative;
@@ -7766,9 +7783,9 @@ body.has-docked-nav {
 .footer img {
   max-width: 100%; }
 
-.footer h3 {
-  border-bottom: 1px solid #BAC1C8;
-  color: #03a9f4;
+.footer .lead, .footer h3.component-title, .footer h4.component-title, .footer .hero-text {
+  border-bottom: 1px solid #55595c;
+  color: #55595c;
   line-height: 2rem;
   padding: 1rem 0 1rem; }
 
@@ -7776,15 +7793,14 @@ body.has-docked-nav {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
-  margin-top: 15px;
-  color: #7F8C8D; }
+  margin-top: 15px; }
 
 .footer ul li a {
   padding: 0 0 5px 0;
   display: block; }
 
 .footer a {
-  color: #78828D; }
+  color: #818a91; }
 
 .social li {
   background: none repeat scroll 0 0 #B5B5B5;
