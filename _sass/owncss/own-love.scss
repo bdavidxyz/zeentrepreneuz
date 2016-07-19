@@ -1,8 +1,3 @@
 .love {
-  .small-title {
-    margin-top: 0.4rem;
-    @include media-breakpoint-up(md) { // i.e. above md do that
-      margin-top: 0.3rem;
-    } 
-  }
+
 }

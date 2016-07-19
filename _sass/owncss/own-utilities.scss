@@ -1,47 +1,54 @@
-.u-sudoku {
+.o-sudoku {
   display:flex;  
   flex-direction:column; 
 }
 
-.u-sudoku__1 {
+.o-sudoku__1 {
   margin-bottom:auto;
   margin-right: auto;
 }
-.u-sudoku__2 {
+.o-sudoku__2 {
  margin-left: auto;
  margin-right: auto;
  margin-bottom: auto;
 }
-.u-sudoku__3 {
+.o-sudoku__3 {
  margin-left: auto;
 }
-.u-sudoku__4 {
+.o-sudoku__4 {
  margin-right: auto;
  margin-top: auto;
  margin-bottom: auto;
 }
-.u-sudoku__5 {
+.o-sudoku__5 {
   margin:  auto;
 }
-.u-sudoku__6 {
+.o-sudoku__6 {
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
 }
-.u-sudoku__7 {
+.o-sudoku__7 {
   margin-top:auto;
 }
-.u-sudoku__8 {
+.o-sudoku__8 {
   margin-top:auto;
   margin-left: auto;
   margin-right: auto;
 }
-.u-sudoku__9 {
+.o-sudoku__9 {
   margin-top:auto;
   margin-left: auto;
 }
 
+
+
+
+
 .h-100 { height: 100% !important; } // notice w-100 exists in bootstrap
+
+
+
 
 
 .u-hidden{
@@ -49,4 +56,24 @@
 }
 .u-visible{
      opacity:1;
+}
+
+
+
+
+.u-svgbox {
+  display: inline-block;
+  position: relative;
+}
+
+.u-svgbox svg { // forcing display block (inline when not) allows height to match perfectly between child parent. See http://codepen.io/davidb583/pen/wGOaJV
+  display: block;
+}
+
+.u-svgbox__same-size-as-svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }

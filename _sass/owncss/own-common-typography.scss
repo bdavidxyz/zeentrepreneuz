@@ -1,34 +1,40 @@
-.hero-title {
-   @extend .display-4;
-}
+// p {
+//   margin-bottom:0;
+// }
 
-.hero-text {
-  // @extend .lead; 
-  font-weight: 300;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.17rem;
-}
+.btn:focus {outline:0;}
 
-.big-title {
-  font-weight: 700;
-  font-size: 2rem;
-}
+// .hero-title {
+//    @extend .display-4;
+// }
 
-.big-text {
-  @extend .lead;
-  font-size: 1.5rem;
-}
+// .hero-text {
+//   // @extend .lead; 
+//   font-weight: 300;
+//   font-size: 1.5rem;
+//   text-transform: uppercase;
+//   letter-spacing: 0.17rem;
+// }
 
-.small-title {
-  @extend h5;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
+// .big-title {
+//   font-weight: 700;
+//   font-size: 2rem;
+// }
 
-.small-text {
-  // @extend .text-muted;
-  // font-weight: bold;
-  // font-weight: 700;
-  font-size: 1.1rem;
-}
+// .big-text {
+//   @extend .lead;
+//   font-size: 1.5rem;
+// }
+
+// .small-title {
+//   @extend h5;
+//   font-size: 1.5rem;
+//   font-weight: 700;
+// }
+
+// .small-text {
+//   // @extend .text-muted;
+//   // font-weight: bold;
+//   // font-weight: 700;
+//   font-size: 1.1rem;
+// }

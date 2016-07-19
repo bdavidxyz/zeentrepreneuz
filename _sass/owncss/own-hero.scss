@@ -22,12 +22,12 @@
 }
 
 .hero-cta {
-  max-width: 15rem;
   @include media-breakpoint-down(sm) {
+    max-width: 15rem;
     margin-left: auto;
     margin-right: auto;
   }
-  font-size: $lead-font-size;
+  // font-size: $lead-font-size;
 }
 
 .hero-input {
