@@ -3533,7 +3533,7 @@ input[type="button"].hero-button {
         .card-group .card:not(:first-child):not(:last-child) .card-img-top,
         .card-group .card:not(:first-child):not(:last-child) .card-img-bottom {
           border-radius: 0; } }
-@media (min-width: 544px) {
+@media (min-width: 992px) {
   .card-columns {
     column-count: 3;
     column-gap: 1.25rem; }
@@ -7732,9 +7732,8 @@ body.has-docked-nav {
   padding-right: .5rem; }
 
 .what__sub-image {
-  width: 50%;
   margin: 0 auto; }
-  @media (min-width: 768px) {
+  @media (max-width: 350px) {
     .what__sub-image {
       width: 100%; } }
 
@@ -7758,6 +7757,14 @@ body.has-docked-nav {
 
 .demo__text-right {
   align-self: center; }
+
+@media (min-width: 992px) {
+  .faq .card-columns {
+    column-count: 3;
+    column-gap: 1.25rem; }
+    .faq .card-columns .card {
+      display: inline-block;
+      width: 100%; } }
 
 .full {
   width: 100%; }
