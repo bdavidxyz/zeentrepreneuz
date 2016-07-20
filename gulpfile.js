@@ -74,6 +74,7 @@ gulp.task('optimize-html', ['optimize-js'], function() {
 gulp.task('watch', function () {
     gulp.watch(['_sass/*.scss',
                 '_sass/**/*.scss',
+                '_data/*.yml',
                 'css/*.scss',
                 'js/*.js',
                 '*.html',

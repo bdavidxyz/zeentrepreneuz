@@ -13,9 +13,9 @@
 }
 
 .what__sub-image {
-  width: 50%; 
   margin: 0 auto;
-  @include media-breakpoint-up(md) {
+  @media (max-width: 350px) {
     width: 100%;
   }
+
 }
