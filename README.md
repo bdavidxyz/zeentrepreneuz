@@ -2,11 +2,36 @@
 
 
 
-
 <h1 align="center">Zee</h1>
 <div align="center">Free, simple, efficient landing page builder.</div>
 
 ## [Read intro, features & benefits here &rarr;](http://bdavidxyz.github.io/zee)
+
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  
+
+- [Zee](#zee)
+  - [Quickstart](#quickstart)
+    - [Prerequisite](#prerequisite)
+    - [Develop](#develop)
+    - [Deploy](#deploy)
+  - [Sections](#sections)
+    - [What it is](#what-it-is)
+    - [How to include a section](#how-to-include-a-section)
+  - [Customization](#customization)
+    - [Change theme](#change-theme)
+    - [Build your own theme](#build-your-own-theme)
+    - [Cutomize a section](#cutomize-a-section)
+  - [Warnings](#warnings)
+    - [Bootstrap 4 officially not yet ready](#bootstrap-4-officially-not-yet-ready)
+    - [Bootstrap Javascript is disabled](#bootstrap-javascript-is-disabled)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
+
 
 ## Quickstart
 
@@ -50,6 +75,8 @@ $ gulp deploy
 
 
 ## Sections
+
+You build a unique one-page website by adding and editing sections.
 
 ### What it is
 
@@ -95,4 +122,50 @@ Inclusion of js  (if apply) : in file **_layout/default.html**
       {% include ownjs/pricingtable0.js.html %}
     <!--endjs-->
 ```
-(put the line right above the endjs comment to allow 3rd party lib to load first)
+(put the line right above the endjs comment to allow 3rd party lib to load first
+)
+
+
+
+## Customization
+
+### Change theme
+
+You can change theme by editing _data/theme.yml.
+Choose amongst the availables pre-defined themes.
+
+You are encouraged to create your own theme, it's very easy and may suit your needs better.
+
+
+### Build your own theme
+
+There are very few changes to make in order to get a new theme.
+
+Open css/main.scss, and look for line
+
+```
+//CREATE YOUR OWN THEME BELOW
+```
+
+And modify listed parameters under this comment.
+There are not so many parameters to change, 
+
+### Cutomize a section
+
+Each section is basically a bootstrap 4 snippet. 
+There are very few changes compared to plain old bootstrap.
+Even the theme variables are actually bootstrap-based SASS variables.
+
+If you already met this framework, even in lower version, customize and create a section should be very easy.
+
+
+## Warnings
+
+### Bootstrap 4 officially not yet ready
+
+But used here, the use of flexbox is very convenient in many scenarii, amongst other goodies.
+
+### Bootstrap Javascript is disabled
+
+High performance is a high priority for the tool, therefore Javascript modules are disable. Simply uncomment them in _layouts/default.html to use them.
+
